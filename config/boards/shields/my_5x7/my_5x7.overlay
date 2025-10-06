@@ -1,14 +1,12 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
+        zmk,backlight = &rgb;
     };
 
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "COL2ROW";
-
-        rows = <&row0 &row1 &row2 &row3 &row4>;
-        cols = <&col0 &col1 &col2 &col3 &col4 &col5 &col6>;
 
         row-gpios = <&gpio0 2 (GPIO_ACTIVE_HIGH)>,
                     <&gpio0 3 (GPIO_ACTIVE_HIGH)>,
@@ -38,7 +36,6 @@
         strip = <&ws2812>;
         num-keys = <35>;
 
-        /* กำหนด mapping ของแต่ละปุ่ม → ดวงไฟ (index 0–34) */
         led-map = <
             0  1  2  3  4  5  6
             7  8  9 10 11 12 13
