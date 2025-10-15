@@ -1,1 +1,0 @@
-# Empty shield config for ZMK 3.5
