@@ -15,7 +15,7 @@ row-gpios =         <&gpio0 6 GPIO_ACTIVE_HIGH>,
                     <&gpio0 20 GPIO_ACTIVE_HIGH>,
                     <&gpio1 24 GPIO_ACTIVE_HIGH>,
                     <&gpio0 102 GPIO_ACTIVE_HIGH>,
-                    <&gpio0 107 GPIO_ACTIVE_HIGH>,
+                    <&gpio0 107 GPIO_ACTIVE_HIGH>;
                     
 
         col-gpios = 
